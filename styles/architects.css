@@ -1,5 +1,55 @@
 /* Work Sans font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
-*{
+
+/* shared styles */
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+}
+
+/* header styles */
+header{
+    background: rgb(173, 228, 128);
+    padding: 50px 240px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-title{
+    font-size: 3rem;
+}
+nav > ul {
+    display: flex;
+}
+nav > li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+}
+/* banner styles */
+.banner-content {
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-content{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+   color: #727272;
+   font-size: 16px
 }
