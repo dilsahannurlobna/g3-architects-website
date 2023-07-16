@@ -123,28 +123,37 @@ main{
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 
 }
+.features-img img{
+    height: 90%;
+    margin-left: 90px;
+}
 
 /*facts section*/
 
 .facts-card-container{
-    display: flex;
+    display: flex; 
     justify-content: space-around;
 }
 .facts-card-container .card{
    border-radius: 8px;
     border: 1px solid #ff900E;
-    text-align: center;
+    text-align: left;
     padding: 30px;
 }
 .tan-years-badge{
     border-radius: 8px;
     background: #FF900E;
     color: #FFFFFF;
-    width: 342px;
+    width: 340px;
     padding: 40px;
+    text-align: center;
 }
 .tan-years-badge h3{
     font-size: 4rem;
+    margin-top: 0;
+}
+.tan-years-badge p{
+    font-size: 1.5rem;
 }
 .facts-card-container .card-stats{
     font-weight: 600;
@@ -184,10 +193,19 @@ main{
     }
     nav,
     .teams-container,
+    .features
     .facts-card-container
     .sponsor-img-container
     {
         flex-direction: column;
+    }
+    .features-img img{
+        width: 100%;
+        margin: 0;
+    }
+    .tan-years-badge{
+        position: static;
+        max-width: 300;
     }
         .teams-img-container{
             grid-template-columns: 1fr;
@@ -206,6 +224,7 @@ main{
         padding: 50px;
     }
     nav, 
+    .features
     .teams-img-container,
     .sponsor-img-container{
         flex-direction: column;
